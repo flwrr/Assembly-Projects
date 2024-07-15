@@ -14,9 +14,9 @@ Generates random numbers between a set range, then uses merge sort to arrange th
 <br>
 
 ## Project READMEs
-- [Sum and Average Calculator](#sum-and-average-calculator)
-- [Prime Generator](#prime-generator)
-- [RNG Sorter](#rng-sorter)
+- [Sum and Average Calculator](#sum-and-average-calculator-1)
+- [Prime Generator](#prime-generator-1)
+- [RNG Sorter](#rng-sorter-1)
 
 # Sum and Average Calculator
 This assembly language program calculates sums and averages using both the CPU and FPU for integer and floating-point numbers. It first converts user input from strings to numbers while validating input, then calculates their sum and average, finally displaying formatted results for 10 input values.
