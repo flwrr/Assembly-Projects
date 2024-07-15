@@ -1,2 +1,56 @@
-# Assembly-Projects
-Various assembly projects
+# Assembly Projects
+Below you can find links to my various x86 Assembly projects, or just read their READMEs here.
+
+## Project Links
+
+### [Sum and Average Calculator](https://github.com/flwrr/Sum-and-Average-Calculator)
+Calculate sums and averages of integer and floating-point numbers using both the CPU and [FPU](https://en.wikipedia.org/wiki/Floating-point_unit).
+
+### [Prime Generator](https://github.com/flwrr/Prime-Generator)
+Calculate up to 4000 primes using the [Sieve of Eratosthenes](https://en.wikipedia.org/wiki/Sieve_of_Eratosthenes), and visualize the sieve generated.
+
+### [RNG Sorter](https://github.com/flwrr/RNG-Sorter)
+Generates random numbers between a set range, then uses merge sort to arrange them in non-descending order.<br>
+<br>
+
+## Project READMEs
+- [Sum and Average Calculator](#sum-and-average-calculator)
+- [Prime Generator](#prime-generator)
+- [RNG Sorter](#rng-sorter)
+
+# Sum and Average Calculator
+This assembly language program calculates sums and averages using both the CPU and FPU for integer and floating-point numbers. It first converts user input from strings to numbers while validating input, then calculates their sum and average, finally displaying formatted results for 10 input values.
+
+## :large_orange_diamond: Run Example - Integers
+This portion of the program is fairly straightforward and is capable of processing the full range of 32-bit signed integers from -2,147,483,648 to 2,147,483,647. The most challenging aspect was parsing + and - signs from input, and the logic of deciding when to and when not to display them to the user (e.g., not -0 nor +0).
+
+![Calc_Integers](https://github.com/user-attachments/assets/26ff24a2-c0c0-4376-83e0-af3a01739524)
+
+## :fish: Run Example - Floating Point Numbers
+Using the FPU, this portion of the program accepts signed inputs with up to 5 decimal places. A very memorable lesson on floating-point arithmetic and floating-point errors. Working with the FPU and fixing rounding errors without looking much up was a challenging exercise.
+
+![Calc_FloatingPoint](https://github.com/user-attachments/assets/0888abb5-ab1b-4897-adca-8d8afcbe87e8)
+
+<br>
+
+# Prime Generator
+This assembly language program calculates up to the first 4000 prime numbers using the [Sieve of Eratosthenes](https://en.wikipedia.org/wiki/Sieve_of_Eratosthenes).<br>
+The sieve formed in generating the n number of primes can be viewed afterward by pressing 'x', <br>
+each array index stores either a 1 marking a prime or a 0 marking a non-prime, beginning with 0.
+
+![Alt Text](https://upload.wikimedia.org/wikipedia/commons/b/b9/Sieve_of_Eratosthenes_animation.gif)
+## :large_orange_diamond: Run Example
+
+![primeGenerator](https://github.com/user-attachments/assets/90deabd3-11da-4c38-952f-174cc011ca63)
+
+<br>
+
+# RNG Sorter
+This assembly language program generates random numbers between a set range, then uses merge sort to arrange them in non-descending order. After displaying the sorted array, the program then displays how many times each integer within the provided range appeared.
+
+The number of values is preset to 200 and their range preset to between 15 and 50, but these can be adjusted by changing the global variables `ARRAYSIZE`, `LO`, and `HI`.
+
+## :large_orange_diamond: Run Example
+
+![RNG Sorter](https://github.com/user-attachments/assets/be55e495-c027-46d8-b180-9584decd81d0)
+
