@@ -17,6 +17,7 @@ Generates random numbers between a set range, then uses merge sort to arrange th
 - [Sum and Average Calculator](#sum-and-average-calculator-1)
 - [Prime Generator](#prime-generator-1)
 - [RNG Sorter](#rng-sorter-1)
+- [Running the Projects](#running-the-projects)
 
 # Sum and Average Calculator
 This assembly language program calculates sums and averages using both the CPU and FPU for integer and floating-point numbers. It first converts user input from strings to numbers while validating input, then calculates their sum and average, finally displaying formatted results for 10 input values.
@@ -54,3 +55,11 @@ The number of values is preset to 200 and their range preset to between 15 and 5
 
 ![RNG Sorter](https://github.com/user-attachments/assets/be55e495-c027-46d8-b180-9584decd81d0)
 
+<br>
+
+# Running the Projects
+  - Running any of these projects requires [Visual Studio ](https://visualstudio.microsoft.com/) with "Desktop development with C++", which includes MASM
+  - Open the .sln file located in the root of the cloned repository
+  - Right-click on the solution in the Solution Explorer and select Build Solution or press Ctrl+Shift+B
+  - Set the project as the startup project by right-clicking on it in the Solution Explorer and selecting Set as Startup Project
+  - Press F5 or click the `Start Debugging` button to run the program
